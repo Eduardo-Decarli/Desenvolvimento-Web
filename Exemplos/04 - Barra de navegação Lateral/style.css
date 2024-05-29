@@ -1,0 +1,35 @@
+/****************
+Barra de Navegação Horizontal */
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    width: 720px;
+    background: #159cd0;
+    background-image: url(Arquivos/fundo-horizontal.png) ;
+    background-repeat: repeat-x;
+    float: left
+}
+
+ul li{
+    float: left;
+    border: 1px;
+}
+
+ul a{
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    background: url(Arquivos/divisor.png) repeat-y ;
+}
+
+ul #primeiro a{
+    background: none;
+}
+
+a:hover{
+    color:#085662;
+    background: #44cade;
+}

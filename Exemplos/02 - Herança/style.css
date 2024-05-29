@@ -1,0 +1,21 @@
+/* 1 ponto */
+p {
+    color: blue;
+}
+
+/* 10 pontos */
+p.intro {
+    color: red;
+}
+
+/* 100 pontos */
+#main p.intro {
+    color: green;
+}
+
+/* Prioridade máxima */
+
+p.intro {
+    color: red !important;
+}
+
