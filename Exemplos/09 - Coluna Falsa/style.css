@@ -6,9 +6,9 @@ body {
 #container {
     /*Tornar um site com layout liquido, refere-se a alterar unidades
     de medida fixos como px em valores variaveis como em ou %*/
-    width: 85%; /*720*/
+    width: 960px; /*720*/
     margin: 0 auto;
-    background: #fff;
+    background: url(Arquivos/coluna.png) repeat-y left top;
     min-width: 720px;
 }
 
@@ -55,7 +55,6 @@ img.img-noticia{
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #d1d1d1;
 }
 
 #navegacao ul {
