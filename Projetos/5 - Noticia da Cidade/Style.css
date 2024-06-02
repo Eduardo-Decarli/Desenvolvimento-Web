@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(Arquivos/fundo.png) repeat-x;
+}
+
+.container {
+    width: 720px;
+    margin: auto;
+    padding: 15px;
+    border: solid red 1px;
+}
+/***************
+Cabeçalho*/
+.cabecalho{
+    background: url(Arquivos/detalhe-topo.png) no-repeat top right;
+    margin-bottom: 70px;
+}
+
+.cabecalho ul{
+    list-style: none;
+    display: flex;
+}
+
+.cabecalho li{
+    margin-top: 40px;
+    padding: 10px;
+    background: #bd021b url(Arquivos/divisor.png) repeat-y left;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: #fff;
+}
+/***************
+Fim Cabeçalho*/
+
+/***************
+Coluna1*/
+.coluna1 {
+    width: 180px;
+    float: left;
+    border: solid red 1px;
+}
+
+.coluna1 h2{
+    background: url(Arquivos/fundo.png) no-repeat top;
+    color: white;
+}
+
+/*************
+Area Entrevistas*/
+.entrevista{
+    margin-bottom: 40px;
+}
+
+.entrevista ul{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.entrevista li{
+    padding: 5px;
+}
+
+/******************
+Area news*/
+
+.news{
+    margin-top: 10px;
+}
+
+.news input[type="email"]{
+    padding: 5px;
+}
+
+.news input[type="submit"]{
+    padding: 5px;
+    background-color: red;
+    color: white;
+}
+
+/***************
+Fim Coluna1*/
+
+.coluna2 {
+    border: green 1px solid;
+    float: left;
+    width: 240px;
+    margin-left: 15px;
+}
+
+.coluna2 h2{
+    background: url(Arquivos/fundo.png) no-repeat top left;
+    color: white;
+}
+
+.coluna3 {
+    border: yellow 1px solid;
+    float: left;
+    width: 240px;
+    margin-left: 15px;
+}
+
+.coluna3 h2{
+    background: url(Arquivos/fundo.png) no-repeat top left;
+    color: white;
+}
+
+.conteudo {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.conteudo h4{
+    background: red;
+}
+
+.conteudo img{
+    width: 100%;
+}
+
+.anuncios-sequencia{
+    padding: 10px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.anuncios-sequencia img{
+    width: 40%;
+    float: left;
+}
+
+.anuncios-sequencia a, p{
+    font-size: 15px;
+}
+
+#rodape{
+    clear: both;
+}
