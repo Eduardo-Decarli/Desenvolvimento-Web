@@ -8,137 +8,230 @@ body {
     background: #fff url(Arquivos/fundo.png) repeat-x;
 }
 
-.container {
-    width: 720px;
-    margin: auto;
+#container {
+    width: 750px;
+    margin: 0 auto;
     padding: 15px;
-    border: solid red 1px;
 }
+
 /***************
 Cabeçalho*/
-.cabecalho{
+
+.topo {
     background: url(Arquivos/detalhe-topo.png) no-repeat top right;
-    margin-bottom: 70px;
+    height: 150px;
+    padding-top: 25px;
 }
 
-.cabecalho ul{
+.logo {
+    width: 152px;
+    height: 66px;
+    text-indent: -3000px;
+    background: url(Arquivos/logo.png) no-repeat;
+}
+
+/*Barra de Navegação
+*/
+a:link,
+a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    display: flex;
 }
 
-.cabecalho li{
-    margin-top: 40px;
-    padding: 10px;
-    background: #bd021b url(Arquivos/divisor.png) repeat-y left;
+#topo ul {
+    margin-top: 30px;
+    background: #b10333 url(Arquivos/divisor.png) repeat-y left;
+    float: left;
 }
 
-.cabecalho a{
+#topo ul li {
+    float: left;
+}
+
+#topo ul li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
     text-decoration: none;
     color: #fff;
+    background: url(Arquivos/divisor.png) no-repeat left;
 }
-/***************
-Fim Cabeçalho*/
 
-/***************
-Coluna1*/
-.coluna1 {
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #navegação a#home,
+body.Brasil #navegação a#Brasil,
+body.Internacional #navegação a#Internacional,
+body.Economia #navegação a#Economia,
+body.Saúde #navegação a#Saúde,
+body.Ciência #navegação a#Ciência,
+body.Fotos #navegação a#Fotos {
+    color: #fff;
+    background-color: #de003e;
+    cursor: text;
+}
+
+#conteudo {
+    margin-top: 150px;
+}
+
+#primario {
+    float: left;
+    width: 270px;
+    margin: 0 0 20px 195px;
+    background-color: blue;
+}
+
+#duas-colunas #primario {
+    width: 555px;
+}
+
+#uma-colunas #primario {
+    width: 750px;
+    margin: 0 0 20px 0px;
+}
+
+#secundario {
+    float: left;
+    background-color: aqua;
+    width: 270px;
+    margin: 0 0 20px 15px;
+}
+
+#lateral {
+    float: left;
     width: 180px;
-    float: left;
-    border: solid red 1px;
+    background-color: antiquewhite;
+    margin: 0 0 20px -750px;
 }
 
-.coluna1 h2{
-    background: url(Arquivos/fundo.png) no-repeat top;
-    color: white;
+#container-rodape {
+    background: #294c81;
+    padding: 20px;
 }
 
-/*************
-Area Entrevistas*/
-.entrevista{
-    margin-bottom: 40px;
+.caixa {
+    padding: 5px 0 5px 0;
+    margin: 10 0;
+    background: #f3f3f3 url(Arquivos/fundo-caixa.png);
 }
 
-.entrevista ul{
-    list-style: none;
-    padding-top: 10px;
-}
-
-.entrevista li{
+h2 {
     padding: 5px;
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
 }
 
-/******************
-Area news*/
-
-.news{
-    margin-top: 10px;
-}
-
-.news input[type="email"]{
+.caixa-conteudo {
+    background: #fff;
     padding: 5px;
+    margin-top: 5px;
 }
 
-.news input[type="submit"]{
+/*Menus Laterais*/
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral a:hover {
+    background: #f9f9f9 url(Arquivos/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
     padding: 5px;
-    background-color: red;
-    color: white;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
 }
 
-/***************
-Fim Coluna1*/
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
 
-.coluna2 {
-    border: green 1px solid;
+img {
+    border: 2px solid #dfdfdf;
+}
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background: #de003e;
+}
+
+/*Formatando lista de noticias*/
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticias li a img {
     float: left;
-    width: 240px;
-    margin-left: 15px;
+    margin: 5px;
 }
 
-.coluna2 h2{
-    background: url(Arquivos/fundo.png) no-repeat top left;
-    color: white;
+#lista-noticias li a {
+    text-decoration: none;
 }
 
-.coluna3 {
-    border: yellow 1px solid;
-    float: left;
-    width: 240px;
-    margin-left: 15px;
+#lista-noticias li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
 }
 
-.coluna3 h2{
-    background: url(Arquivos/fundo.png) no-repeat top left;
-    color: white;
+#lista-noticias li a p {
+    font-size: 0.7em;
+    color: #000;
 }
 
-.conteudo {
-    margin-top: 10px;
-    margin-bottom: 40px;
+#lista-noticias li:hover {
+    background: #eee;
+    cursor: pointer;
 }
 
-.conteudo h4{
-    background: red;
-}
-
-.conteudo img{
-    width: 100%;
-}
-
-.anuncios-sequencia{
-    padding: 10px;
-    margin-bottom: 10px;
-    clear: both;
-}
-
-.anuncios-sequencia img{
-    width: 40%;
-    float: left;
-}
-
-.anuncios-sequencia a, p{
-    font-size: 15px;
-}
-
-#rodape{
-    clear: both;
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
 }
