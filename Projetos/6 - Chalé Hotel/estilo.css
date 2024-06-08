@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-    background: #ede9cc;
+    background: #ede9cc url(Arquivos/bg-container.png)top center repeat-y;
     margin: 0 auto;
     min-width: 740px;
     max-width: 1180px;
@@ -87,3 +87,100 @@ a.reserva {
     float: right;
 }
 
+/***********
+Barra de Navegação Verdical*/
+#menu {
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul#navegacao{
+    float: left;
+}
+
+ul#navegacao a{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;
+}
+
+ul#navegacao a:hover{
+    background-color: #fdf6be;
+}
+
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+/*****************
+Area de Conteudos*/
+
+#area-principal{
+    float: left;
+    width: 50%;
+    background: url(Arquivos/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+#area-lateral{
+    float: right;
+    width: 50%;
+    background: url(Arquivos/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0;
+}
+
+.conteudo {
+    margin: auto;
+    width: 90%;
+    clear: both;
+    margin-bottom: 55px;
+    padding-top: 10px;
+    border-top: #dbcd87 1px solid;
+}
+
+.conteudo #primeiro {
+    border: none;
+}
+
+.conteudo img {
+    float: left;
+    width: 40%;
+    margin-right: 15px;
+}
+
+.conteudo h3 {
+    color: #6e672c;
+    margin-bottom: 5px;
+}
+
+.conteudo p{
+    color: #7d7640;
+    font-size: 0.9em;
+}
+
+#rodape {
+    clear: both;
+    padding: 16px;
+    background: #fff url(Arquivos/bg-rodape.png) repeat-x top;
+}
+
+/*************
+Formatação de Texto*/
+h2{
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
