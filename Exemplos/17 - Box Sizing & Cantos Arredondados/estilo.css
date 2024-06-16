@@ -1,0 +1,29 @@
+
+/*
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    /*border-radius: 200px;*/
+    /*Alguns navegadores não suportam determinadas variaveis, para tornalos compativeis, 
+    é necessario colocar um prefíxo antes da variavel*/
+    /*-webkit- é para o browser chrome v4*/
+    /*-moz- é para o mozila*//*
+    -webkit-border-radius: 10px 50px 80px 100px;
+    border-radius: 10px 50px 80px 100px;
+}*/
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#caixa2 {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+}
