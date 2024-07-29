@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcao1() {
+            document.getElementById('entrada-texto').style.background = 'yellow'
+        }
+
+        function funcao2() {
+            var numChar = document.getElementById('entrada-texto').value
+            if (numChar.length <= 3) {
+                document.getElementById('entrada-texto').style.background = 'red'
+            }else{
+                document.getElementById('entrada-texto').style.background = 'green'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="entrada-texto" onfocus="funcao1()" onblur="funcao2()">
+</body>
+
+</html>
