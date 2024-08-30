@@ -27,6 +27,11 @@ titulo.innerHTML = 'Trocar o Titulo'
 titulo = document.getElementById('titulo');
 titulo.nomeDoAtributo = novoAtributo
 
+//Alterar o valor de um atributo
+titulo = document.getElementById('titulo');
+titulo.src = "novo caminho"
+titulo.id = "novo ID"
+
 //Alterar uma propriedade de estilo
 titulo = document.getElementById('titulo');
 titulo.style.color = '#FF0000'
@@ -40,3 +45,17 @@ titulo.classList.remove('novo-estilo.CSS')
 //innerHTML serve para alterar o conteudo HTML interno de um documento
 const container = document.getElementById('container')
 container.innerHTML = '<p>Conteudo HTML</p>';
+
+//Método addEventListener('tipoDeEvento', 'instrução') adiciona um ouvinte de eventos que dispara quando o usuario faz a ação especificada
+//Por exemplo, o click sobre o elemento 'myBtn'
+document.getElementById('myBtn').addEventListener("click", displayDate)
+
+//Exemplo2
+document.getElementById('myBtn').addEventListener('click', function(){
+    alert('Hello Word')
+})
+
+//Exemplo3
+document.getElementById('myBtn').addEventListener('click', () => {
+    alert('Hello Word')
+})

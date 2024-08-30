@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+    //Evento de Click
+    //Para atribuir um evento, é necessario ter uma propriedade JS na tag HTML que será chamada
+    //por exemplo, quando o usuario apertar no botão, a função displayDate é chamada
+    -->
+    <button onclick="displayDate( )">Aperte o Botão</button>
+
+    <!--
+    Evento onload e onunload
+    Esses eventos são acionados quando o usuario entra e sai da página
+    Normalmente são atribuidos a tarefas de cookies
+    -->
+
+    <body onload="checkCookies()"></body>
+
+    <!--
+    Evento oninput
+    É utilizado acionado quando o usuario insere algum dado no input
+    Por exemplo, colocar o texto do usuario em maiúsculo
+    -->
+    <input type="text" oninput="upperCase()">
+
+    <!--
+    Evento onchange
+    é utilizado o usuario alterar algum valor da tag
+    -->
+    <input type="text" onchange="upperCase()">
+
+    <!--
+    Eventos onmouseover e onmouseout
+    são eventos acionados quando o usuario passa o mouse em cima de um elemento HTML, 
+    ou no caso do onmouseout, quando o usuario tira o mouse de cima
+    -->
+    <div onmouseover="funcao()"></div>
+    <div onmouseout="funcao()"></div>
+
+    <!--
+    Eventos onmousedown, onmouseup e onclick
+    Todos fazem parte de um click do mouse, quando o usuario clica, o onmousedown é disparado e 
+    quando o mouse é liberado do click, o onmouseup é disparado e quando ambos forem finalizados, o evento onclick é disparado
+    -->
+    <div onmousedown="funcao()"></div>
+    <div onmouseup="funcao()"></div>
+    <div onclick="funcao()"></div>
+
+    <!--
+    Evento onfocus
+    É acionado quando um elemento recebe foco
+    -->
+    <input type="text" onfocus="funcaoDeFoco()">
+</body>
+
+</html>
